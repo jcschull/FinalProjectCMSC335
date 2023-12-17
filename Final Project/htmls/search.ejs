@@ -1,0 +1,23 @@
+<!-- DO NOT MODIFY THIS FILE (pretty please w/ a cherry on top)-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Artist Lookup</title>
+</head>
+
+<body>
+    <h1>Search</h1>
+    <br>
+    <%- formTag %>
+        <div id="formBox" style="border: 2px solid gray; padding: 5px; width: 600px">
+            Name: <input type="text" name="query">
+        </div>
+        <br>
+        <input type="reset" />
+		<input type="submit" value="Submit" onclick="return confirm('Are you sure you want to submit?')"/>
+    </form>
+    <hr style="width: 615px; margin-left: 0px;">
+    <a href="/">HOME</a>
+</body>

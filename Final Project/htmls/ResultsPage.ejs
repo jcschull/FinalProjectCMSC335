@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Viewer</title>
+
+    <!--add this in the final-->
+    <script src="v8.js"></script>
+</head>
+
+<body>
+    <div class="border">
+        <div class="container">
+
+            <div class="brownTitle"><h1>Your Results</h1> </div>
+            <div class="photo">
+                <img id="image" src="spotify.jpg" alt="Image Error"><br> 
+            </div>
+
+            <form>
+                <fieldset>
+                    <legend>
+                        <strong>Everything About the Artist</strong>
+                    </legend>
+                    
+                    <label id="fav"><strong>Name :</strong> 
+                        <%- name %>
+                    </label>
+                    <br>
+                    <br>
+                    <label><strong>Number of Followers :</strong> 
+                        <%- followers %>
+                    </label>
+                    <br>
+                    <br>
+                    <label><strong>Genre : </strong>
+                        <%- genres %>
+                    </label>
+                    <br>
+                    <br>
+                    <label><strong>Artist's Spotify Page :</strong> 
+                        <%- spotify %>
+                    </label>
+
+                </fieldset>
+
+                <hr>
+
+                <input type="button" value="Back to Home Page">
+                <button onclick="getFavorite()" value="Favorite Artist"></button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
